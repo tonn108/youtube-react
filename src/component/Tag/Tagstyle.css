@@ -1,0 +1,25 @@
+#Tag {
+    width: 99%;
+    display: flex;
+    padding: 5px 24px;
+    gap: 15px;
+    position: fixed;
+    background-color: #FFF;
+}
+#Tag .-item{
+    display: flex;
+    height: 32px;
+    padding: 0 12px;
+    background-color: #f2f2f2;
+    color: #000;
+    align-items: center;
+    border-radius: 8px;
+    font-size: 1.4rem;
+}
+#Tag .-item:hover{
+    background-color: #e5e5e5;
+}
+#Tag .-item.-active{
+    background-color: #000 !important;
+    color: white;
+}

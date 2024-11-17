@@ -1,0 +1,318 @@
+/* หลักการแบ่ง 2 คอลัมน์ */
+#main-content {
+    display: grid; /* ใช้ flexbox เพื่อจัดการกับคอลัมน์ */
+    grid-template-columns: 720px auto;
+    gap: 20px; /* ช่องว่างระหว่างคอลัมน์ */
+  }
+  
+  #lef-content .-detail .-title{
+    font-weight: 400;
+    font-size: 20px;
+    padding: 10px 0  10px 0 ;
+  }
+  #lef-content .-detail .-group{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 0  20px 0 ;
+    
+  }
+ 
+  #lef-content .-detail  .-cha-detail{
+    display: grid;
+    grid-template-columns: 44px 120px 60px;
+    width: 50%;
+    height: 32px;
+    align-items: center;
+    font-weight: 400;
+    font-size: 13px;
+  }
+  #lef-content .-detail .-cha-detail .-img{
+    width: 44px;
+    height: 32px;
+    display: flex;
+    overflow: hidden;
+  }
+  #lef-content .-detail .-cha-detail .-img img{
+    border-radius: 10rem;
+  }
+  .-btn-follow {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 40px 40px 40px 40px;
+    overflow: hidden;
+    text-align: center;
+    width: 60px;
+    height: 32px;
+    background-color: black;
+    color: #fff;
+    font-size: 14px;
+    
+
+  }
+  .-count{
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    align-items: center;
+    text-align: center;
+    font-weight: 400;
+    font-size: 13px;
+  }
+  .-like {
+    position: relative;
+    display: grid;
+    left: 33%;
+    width: 80px;
+    height: 32px;
+    grid-template-columns: auto;
+    align-items: center;
+    border-radius: 40px 0 0 40px;
+    overflow: hidden;
+    background-color: #f4f0f0;
+    color: black;
+    font-size: 14px;
+    
+  }
+  .-like::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: -1px; /* ตำแหน่งของเส้น */
+    width: 2px; /* ความกว้างของเส้น */
+    height: 70%;
+    background-color: #c3c0c0; /* สีของเส้น */
+}
+  .-dislike {
+    width: 30%;
+    position: relative; 
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    height: 32px;
+    border-radius: 0 40px 40px 0;
+    overflow: hidden;
+    background-color: #f4f0f0;
+    color: black;
+    font-size: 14px;
+    
+  }
+
+
+  
+ 
+  #lef-content .-detail .-three-btn{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    font-weight: 400;
+    font-size: 13px;
+    gap: 16px;
+  }
+  .-share .-btn-share {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    
+    border-radius: 40px 40px 40px 40px;
+    overflow: hidden;
+    text-align: center;
+    width: 80px;
+    height: 32px;
+    background-color: #f4f0f0;
+    color: black;
+    font-size: 14px;
+    
+  }
+  .-btn-download {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    
+    border-radius: 40px 40px 40px 40px;
+    overflow: hidden;
+    text-align: center;
+    width: 80px;
+    height: 32px;
+    background-color: #f4f0f0;
+    color: black;
+    font-size: 14px;
+    
+  }
+  .-more {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    
+    border-radius: 40px 40px 40px 40px;
+    overflow: hidden;
+    text-align: center;
+    width: 32px;
+    height: 32px;
+    background-color: #f4f0f0;
+    color: black;
+    font-size: 14px;
+    
+  }
+.-description{
+  width: 100%;
+  height: 100px;
+  display:-webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+  text-overflow: ellipsis;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #f4f0f0;
+  line-height: 15px;
+}
+.-detail-des{
+  margin-top: 12px;
+  margin-left: 12px;
+}
+
+#lef-content.-comment{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  height: auto;
+  background-color: aqua;
+}
+.-com-title{
+  font-weight: 400;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.-com-input{
+  width: 70%;
+  height: 30px;
+}
+.-com-input input{
+  width: 100%;
+  height: 30px;
+  left: 70%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.-com-img {
+  width: 100%;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  padding:10px 0  10px 0 ;
+}
+.-com-img img{
+  width: 32px;
+  height: 32px;
+  border-radius: 10rem;
+}
+.-content-com{
+  top: 20%;
+  width: 100%;
+  height: auto;
+  background-color: aqua;
+}
+.-com-detail{
+  display: grid;
+  grid-template-columns: 44px auto 20px;
+  width: 100%;
+  height: 44px;
+  
+}
+.-com-de-img{
+  margin-top: 5px;
+  margin-left: 2px;
+  width: 44px;
+  height: 32px;
+  display: flex;
+  
+}
+.-com-de-img img{
+  border-radius: 10rem;
+}
+.-com-content{
+  margin-left: 2px;
+  
+}
+.-com-id-cha{
+  font-weight: 300;
+  font-size: 12px;
+  padding: 3px 0  3px 0 ;
+}
+.-com-text{
+  font-weight: 300;
+  font-size: 10px;
+  padding: 3px 0  3px 0 ;
+}
+.-com-con-more{
+  font-weight: 300;
+  font-size: 15px;
+  width: 100%;
+  
+}
+.-review-video , .-main-vlong{
+  width: 410px;
+  display: grid;
+  grid-template-columns: 200px 200px;
+  gap: 10px;
+  
+}
+.-re-tle , .-vlong-title  {
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+  max-width: 20ch;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  font-weight: 400;
+  font-size: 15px;
+}
+.-review-video , .-main-vlong{
+  padding: 10px 0  10px 0 ;
+  border-bottom: 2px solid #e5e5e5;
+}
+  #rigth-content .-re-thumnail , .-vlong-thumnail{
+    width: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    overflow: hidden;
+    
+  }
+  .-short{
+    padding: 10px 0  10px 0 ;
+  }
+  .-short{
+  width: 80%;
+  padding: 10px 0  10px 0 ;
+  border-bottom: 2px solid #e5e5e5;
+  }
+  .-short-video{
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px;
+    
+  }
+  .-short-video .-video-thumnail img{
+    height: 150px;
+    border-radius: 10px;
+  }
+  .-main-review .-text{
+    font-weight: 400;
+    font-size: 25px;
+  }
+  .-short-video-title{
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    max-width: 10ch;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    font-weight: 350;
+    font-size: 14px;
+  }
